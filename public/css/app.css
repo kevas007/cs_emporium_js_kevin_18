@@ -6164,6 +6164,40 @@ readers do not read off random characters that represent icons */
   font-size: 5rem;
 }
 
+.item1 {
+  background-image: url(../../public/img/services/service-1.jpg);
+  background-size: cover;
+  width: 100%;
+  border: white 8px solid;
+  height: 200px;
+}
+
+.item2 {
+  background-image: url(../../public/img/services/service-2.jpg);
+  background-size: cover;
+  width: 100%;
+  border: white 8px solid;
+  height: 200px;
+}
+
+.item3 {
+  background-image: url(../../public/img/services/slider-3.jpg);
+  background-size: cover;
+  width: 100%;
+  border: white 8px solid;
+  height: 200px;
+}
+
+.section2 {
+  color: white;
+}
+.section2 h2, .section2 .h2 {
+  margin: 80px;
+  padding-bottom: 15px;
+  border-bottom: 5px solid white;
+  border-bottom-width: 3px;
+}
+
 body {
   font-family: "poppins", sans-serif;
 }
