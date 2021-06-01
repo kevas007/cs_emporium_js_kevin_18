@@ -6276,6 +6276,18 @@ readers do not read off random characters that represent icons */
     transform: opacity linear;
   }
 }
+i {
+  font-size: 2rem;
+}
+
+.bg1 {
+  background-color: #f3f2f3;
+}
+
+.bg2 {
+  background: #dd4545;
+}
+
 body {
   font-family: "poppins", sans-serif;
 }
