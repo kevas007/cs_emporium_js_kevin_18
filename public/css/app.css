@@ -6141,6 +6141,29 @@ readers do not read off random characters that represent icons */
   box-shadow: 2px 1px 1px white;
 }
 
+.section1 {
+  margin-top: 150px;
+  background-color: #f3f3f3;
+}
+
+.mov {
+  padding-left: 12%;
+}
+
+#sal {
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  width: 150px;
+}
+
+.text1 {
+  padding-top: 5%;
+}
+.text1 h1, .text1 .h1 {
+  font-size: 5rem;
+}
+
 body {
   font-family: "poppins", sans-serif;
 }
