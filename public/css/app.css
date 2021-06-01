@@ -6124,6 +6124,11 @@ readers do not read off random characters that represent icons */
   top: 10%;
 }
 
+.em {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
 #blanc {
   width: 20px;
   height: 20px;
@@ -6196,6 +6201,16 @@ readers do not read off random characters that represent icons */
   padding-bottom: 15px;
   border-bottom: 5px solid white;
   border-bottom-width: 3px;
+}
+
+.sa {
+  padding-top: 15%;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: 65%;
 }
 
 body {
