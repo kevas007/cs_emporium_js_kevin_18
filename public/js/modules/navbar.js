@@ -10,3 +10,12 @@ window.addEventListener('scroll',()=>{
         nav.classList.remove('anim-nav');
     }
 })
+
+let bu = document.getElementsByClassName('toggle-button')[0];
+
+
+let navlinks = document.getElementsByClassName('navbar-nav')[0]
+
+bu.addEventListener('click',()=>{
+    navlinks.classList.toggle('active')
+})

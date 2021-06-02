@@ -5,3 +5,5 @@ import './modules/navbar.js'
 import './modules/carde.js'
 
 import './modules/dark.js'
+
+import './modules/modal.js'

@@ -18,13 +18,14 @@
             <h1 class="em">emporium.</h1>
         </div>
         <!-- debut de la nav -->
-        <div class="navig b">
+        <div class="navig ">
             <nav id="nav" class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNav">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div id="navbarNav">
                     <ul class="navbar-nav navbar-center  mt-5">
                         <li class="nav-item active mx-4">
                             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
@@ -49,17 +50,46 @@
                             <button id="noir"></button>
                         </li>
                         <li>
-                            <a id="myBtn" class="nav-link bg-secondary text-white" href="#">Connexion<span
-                                    class="sr-only">(current)</span></a>
+                            <button id="myBtn" class="nav-link bg-secondary text-white modal-btn"
+                                href="#">Connexion</button>
                         </li>
                     </ul>
-                    <label id="icone">
-                        <i class="fas fa-bars"></i>
-                    </label>
                 </div>
             </nav>
-        </div>
-        <!-- fin de la nav -->
+            <!-- //modal-btn  -->
+            <div class="modal-bg">
+                <div class="modal">
+                    <h2>Connexion</h2>
+                    <label for="name">Nom d'utilsateur: </label>
+                    <input type="text" name="name">
+                    <label for="mdp">Mots de passe: </label>
+                    <input type="password" name="mdp" id="">
+                    <button class="mt-2 mb-2">Connexion</button>
+                    <span class="modal-close">x</span>
+                    <h5>Pas encore de compte? <span class="text-warning st1">S'inscrire</span></h5>
+                </div>
+            </div>
+
+            <!-- //modal-btn  -->
+            <div class="modal-bg2">
+                <div class="modal2">
+                    <h2>Inscription</h2>
+                    <label for="name">Nom </label>
+                    <input type="text" name="name">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom">
+                    <label for="email">email</label>
+                    <input type="email" name="email">
+                    <label for="mdp">Mots de passe: </label>
+                    <input type="password" name="mdp" id="">
+                    <label for="mdp">Confirmation du mot de passe: </label>
+                    <input type="password" name="mdp" id="">
+                    <button class="mt-2 mb-2">S'inscrire</button>
+                    <span class="modal-close2">x</span>
+                    <h5>Vous avez déjà un compte <span class="text-warning st2">se connecter</span></h5>
+                </div>
+            </div>
+            <!-- fin de la nav -->
     </header>
     <!-- fin du header -->
     <main>
@@ -73,7 +103,7 @@
                         <p>A wonderfull serenity has taken possession of my my entire seul. like thes sweet morgins of
                             <p>A wonderful has taken possension of my my entire soul. like these sweet <br> mornigs of
                                 pring which i enjoy with my. </p>
-                            <button id="sal" class=" bg-danger text-white text-center" href="#">SALE ITEMS</button>
+                            <button id="sal" class=" bg-danger text-white text-center mb-5" href="#">SALE ITEMS</button>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-center text-center ">
                         <img src="./public/img/slider-1.jpg" class="img-fluid" alt="">
@@ -83,7 +113,7 @@
             </div>
         </section>
         <!--fin de la  section1 -->
-
+        </div>
         <!--debut de la  section2 -->
         <section class="section2">
             <div class="container-fluid my-5">
@@ -467,42 +497,43 @@
 
         <!--debut de la  section 6-->
         <section class=mt-5>
-                <div class="carde d-flex justify-content-around">
-                    <div class="m-5 text-center pt-5 bg1 ">
-                        <div class="card-body">
-                            <i class="far fa-check-circle"></i>
-                            <h5 class="mt-5">TRUSTED BY 10,000+ CUSTOMERS </h5>
-                            <p class="mt-5">
-                                Lorem, ipsum dolor sit amet consecteur adipicing elit.Voluptate mollitia memo earum nisi
-                                vritatis dolore vitae dleniti.
-                            </p>
-                            <button class="mt-5 bg-dark text-white  mb-5 px-2">LEARN MORE</button>
-                        </div>
-                    </div>
-                    <div class="m-5 text-center bg1 pt-5">
-                        <div class="card-body">
-                            <i class="far  fa-paper-plane"></i>
-                            <h5 class="mt-5">VERY FAST SHIPPING </h5>
-                            <p class="mt-5">
-                                Lorem, ipsum dolor sit amet consecteur adipicing elit.Voluptate mollitia memo earum nisi
-                                vritatis dolore vitae dleniti.
-                            </p>
-                            <button class="mt-5 bg-dark text-white mb-5 px-2 ">LEARN MORE</button>
-                        </div>
-                    </div>
-                    <div class="m-5  text-center bg1 pt-5">
-                        <div class="card-body">
-                            <i class="far fa-check-circle"></i>
-                            <h5 class="mt-5">TRUSTED BY 10,000+ CUSTOMERS </h5>
-                            <p class="mt-5">
-                                Lorem, ipsum dolor sit amet consecteur adipicing elit.Voluptate mollitia memo earum nisi
-                                vritatis dolore vitae dleniti.
-                            </p>
-                            <button class="mt-5 bg-dark text-white mb-5 px-2">LEARN MORE</button>
-                        </div>
+            <div class="carde d-flex justify-content-around">
+                <div class="m-5 text-center pt-5 bg1 ">
+                    <div class="card-body">
+                        <i class="far fa-check-circle"></i>
+                        <h5 class="mt-5">TRUSTED BY 10,000+ CUSTOMERS </h5>
+                        <p class="mt-5">
+                            Lorem, ipsum dolor sit amet consecteur adipicing elit.Voluptate mollitia memo earum nisi
+                            vritatis dolore vitae dleniti.
+                        </p>
+                        <button class="mt-5 bg-dark text-white  mb-5 px-2">LEARN MORE</button>
                     </div>
                 </div>
+                <div class="m-5 text-center bg1 pt-5">
+                    <div class="card-body">
+                        <i class="far  fa-paper-plane"></i>
+                        <h5 class="mt-5">VERY FAST SHIPPING </h5>
+                        <p class="mt-5">
+                            Lorem, ipsum dolor sit amet consecteur adipicing elit.Voluptate mollitia memo earum nisi
+                            vritatis dolore vitae dleniti.
+                        </p>
+                        <button class="mt-5 bg-dark text-white mb-5 px-2 ">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="m-5  text-center bg1 pt-5">
+                    <div class="card-body">
+                        <i class="far fa-check-circle"></i>
+                        <h5 class="mt-5">TRUSTED BY 10,000+ CUSTOMERS </h5>
+                        <p class="mt-5">
+                            Lorem, ipsum dolor sit amet consecteur adipicing elit.Voluptate mollitia memo earum nisi
+                            vritatis dolore vitae dleniti.
+                        </p>
+                        <button class="mt-5 bg-dark text-white mb-5 px-2">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
         </section>
+
 
         <!--fin de la  section 6-->
 
