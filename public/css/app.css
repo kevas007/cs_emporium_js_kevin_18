@@ -6117,198 +6117,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.navbar-nav.navbar-center {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-  top: 10%;
-}
-
-.em {
-  font-weight: bold;
-  font-size: 5rem;
-}
-
-#blanc {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  margin-right: 5px;
-  border-radius: 5px;
-  box-shadow: 2px 1px 1px black;
-}
-
-#noir {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  border-radius: 5px;
-  box-shadow: 2px 1px 1px white;
-}
-
-.section1 {
-  margin-top: 150px;
-  background-color: #f3f3f3;
-}
-
-.mov {
-  padding-left: 12%;
-}
-
-#sal {
-  border-radius: 20px;
-  border-style: none;
-  height: 40px;
-  width: 150px;
-}
-
-.text1 {
-  padding-top: 5%;
-}
-.text1 h1, .text1 .h1 {
-  font-size: 5rem;
-}
-
-.item1 {
-  background-image: url(../../public/img/services/service-1.jpg);
-  background-size: cover;
-  width: 100%;
-  border: white 8px solid;
-  height: 200px;
-}
-
-.item2 {
-  background-image: url(../../public/img/services/service-2.jpg);
-  background-size: cover;
-  width: 100%;
-  border: white 8px solid;
-  height: 200px;
-}
-
-.item3 {
-  background-image: url(../../public/img/services/slider-3.jpg);
-  background-size: cover;
-  width: 100%;
-  border: white 8px solid;
-  height: 200px;
-}
-
-.section2 {
-  color: white;
-}
-.section2 h2, .section2 .h2 {
-  margin: 80px;
-  padding-bottom: 15px;
-  border-bottom: 5px solid white;
-  border-bottom-width: 3px;
-}
-.section2 h2:hover, .section2 .h2:hover {
-  margin: 8px;
-  transition: all 0.5s ease-in-out;
-}
-
-.sa {
-  padding-top: 15%;
-  background: red;
-  color: white;
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  margin-left: 65%;
-}
-
-.section4 {
-  background-image: url(../../public/img/cta-bg.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 650px;
-}
-
-.carousel {
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel .carousel__item,
-.carousel .carousel__item--hidden {
-  display: none;
-}
-
-.carousel .carousel__item img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-}
-
-.carousel .carousel__item--visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
-}
-
-.carousel .carousel__actions {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel .carousel__actions button {
-  border-radius: 50px;
-  border: 0;
-  font-weight: bold;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-}
-
-.carousel .carousel__actions button#carousel__button--prev {
-  margin-left: 20px;
-}
-
-.carousel .carousel__actions button#carousel__button--next {
-  margin-right: 20px;
-}
-
-@keyframes fadeVisibility {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: opacity linear;
-  }
-}
-i {
-  font-size: 2rem;
-}
-
-.bg1 {
-  background-color: #f3f2f3;
-}
-
-.bg1:hover {
-  background: #dd4545;
-  color: White;
-}
-.bg1:hover button {
-  background-color: white !important;
-  color: black !important;
-}
-
-#copy {
-  background: #000000;
-}
-
-body {
-  font-family: "poppins", sans-serif;
-}
-
-@font-face {
-  font-family: "poppins";
-  src: url("../../public/fonts/Poppins/Poppins-Regular.ttf");
-}
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -17038,6 +16846,217 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.navbar-nav, .navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 10%;
+  animation: vis 0.5s;
+}
+
+.em {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+#blanc {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 1px 1px black;
+}
+
+#noir {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 2px 1px 1px white;
+}
+
+.anim-nav {
+  color: black !important;
+  background-color: white !important;
+  position: fixed !important;
+  top: 0%;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0 !important;
+  border-bottom: 2px solid black !important;
+  align-items: center;
+  z-index: 1;
+}
+
+@keyframes vis {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section1 {
+  margin-top: 150px;
+  background-color: #f3f3f3;
+}
+
+.mov {
+  padding-left: 12%;
+}
+
+#sal {
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  width: 150px;
+}
+
+.text1 {
+  padding-top: 5%;
+}
+.text1 h1, .text1 .h1 {
+  font-size: 5rem;
+}
+
+.item1 {
+  background-image: url(../../public/img/services/service-1.jpg);
+  background-size: cover;
+  width: 400px;
+  border: white 8px solid;
+}
+
+.item2 {
+  background-image: url(../../public/img/services/service-2.jpg);
+  background-size: cover;
+  width: 400px;
+  border: white 8px solid;
+  height: 100%;
+}
+
+.item3 {
+  background-image: url(../../public/img/services/slider-3.jpg);
+  background-size: cover;
+  width: 400px;
+  border: white 8px solid;
+}
+
+.section2 {
+  color: white;
+}
+.section2 h2, .section2 .h2 {
+  margin-top: 20%;
+  border-bottom: 3px solid White;
+  padding-bottom: 15px;
+  margin-bottom: 20%;
+}
+.section2 h2:hover, .section2 .h2:hover {
+  margin: 5px !important;
+  transition: all 3s ease-out;
+}
+
+.sa {
+  padding-top: 15%;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: 65%;
+}
+
+.section4 {
+  background-image: url(../../public/img/cta-bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+}
+
+.carousel .carousel__item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
+i {
+  font-size: 2rem;
+}
+
+.bg1 {
+  background-color: #f3f2f3;
+}
+
+.bg1:hover {
+  background: #dd4545;
+  color: White;
+}
+
+#copy {
+  background: #000000;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../../public/fonts/Poppins/Poppins-Regular.ttf");
 }
 
 /*# sourceMappingURL=app.css.map */

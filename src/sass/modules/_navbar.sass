@@ -1,11 +1,14 @@
-.navbar-nav.navbar-center 
+.navbar-nav, .navbar-center 
     position: absolute
     left: 50%
     transform: translatex(-50%)
     top: 10%
+    animation: vis 0.5s
+
+
 .em
     font-weight: bold
-    font-size: 5rem
+    font-size: 4rem
 
 #blanc 
     width: 20px
@@ -22,3 +25,23 @@
     border-radius:5px
     box-shadow: 2px 1px 1px white
     
+.anim-nav
+    color: black !important
+    background-color: white  !important
+    position: fixed !important
+    top: 0% 
+    height:80px
+    width: 100%
+    display: flex
+    justify-content: space-around
+    margin-top:0 !important
+    border-bottom: 2px solid black !important
+    align-items: center
+    z-index: 1
+
+.anim
+    @keyframes vis
+        0%
+            opacity: 0
+        100%
+            opacity: 1
