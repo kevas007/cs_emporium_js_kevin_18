@@ -16901,6 +16901,17 @@ textarea.form-control-lg {
   }
 }
 
+body.dark {
+  color: white !important;
+  background: #333 !important;
+}
+body.dark nav li {
+  color: #fff !important;
+}
+body.dark .section1 {
+  color: black !important;
+}
+
 .section1 {
   margin-top: 150px;
   background-color: #f3f3f3;
@@ -17050,6 +17061,13 @@ i {
   background: #000000;
 }
 
+@media screen and (max-width: 768px) {
+  .carde {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 body {
   font-family: "poppins", sans-serif;
 }

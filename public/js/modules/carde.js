@@ -8,6 +8,6 @@ let item2 = document.getElementsByClassName('item2');
 let item3 = document.getElementsByClassName('item3');
 
 
-div1.addEventListener('mousemove',function(){
-    item1.style.transform = 'translate(-50%, -50%) scale(2)';
-})
+// div1.addEventListener('mousemove',function(){
+//     item1.style.transform = 'translate(-50%, -50%) scale(2)';
+// })
