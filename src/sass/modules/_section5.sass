@@ -1,51 +1,44 @@
-.carousel 
+.h-hot 
+    margin-left: 11%
+.shirt-car 
+    height: 19.5vh
+.promoC
+    border-radius: 50%
+    text-align: center
+    height:7vh
+    width: 25% !important
+    margin-top: 5%
+    margin-left: 5%
+    .ss-promoC
+        width: 100% !important
+
+
+//Boutons du carrousel 
+.btn-carrousel 
+    width: 100%
+    padding-left: 5%
+    button
+        border: solid 1px
+        border-radius: 50%
+        height: 1.7vh
+        width: 0.3% !important
+        margin-right: 2%
+        background-color: white
+.over
     overflow: hidden
-    position: relative
 
-.carousel .carousel__item,
-.carousel .carousel__item--hidden 
-    display: none
+.mgc
+    transform: scale(1.2)
+    transition: 0.5s ease
 
-
-.carousel .carousel__item img
-    width: 100%
-    max-width: 600px
-    height: auto
+.active 
+    display: flex !important
+.nonee
+    display: none !important
 
 
-.carousel .carousel__item--visible 
-    display: block
-    animation: fadeVisibility 0.5s
+.change
+    background-color: grey !important
 
-
-.carousel .carousel__actions 
-    display: flex
-    width: 100%
-    justify-content: space-between
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-
-
-.carousel .carousel__actions button 
-    border-radius: 50px
-    border: 0
-    font-weight: bold
-    cursor: pointer
-    width: 40px
-    height: 40px
-
-
-.carousel .carousel__actions button#carousel__button--prev 
-    margin-left: 20px
-
-
-.carousel .carousel__actions button#carousel__button--next 
-    margin-right: 20px
-
-@keyframes fadeVisibility 
-    0% 
-        opacity: 0
-    100% 
-        opacity: 1
-        transform: opacity linear
+.carou-active
+    transition:  1s ease-in-out !important
